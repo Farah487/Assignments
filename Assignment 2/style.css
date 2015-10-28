@@ -1,0 +1,223 @@
+/*LESS Variables & Mixins*/
+.font {
+  font-family: "Nunito", sans-serif;
+}
+.borded {
+  border-radius: 13px 13px 13px;
+}
+.size {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+}
+.move {
+  clear: left;
+}
+.fill {
+  background-color: #D8D8D8;
+  max-width: 1080px;
+  margin: auto;
+  border-radius: 13px 13px 13px;
+  padding: 0.1%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+}
+/*Body, h1, h2, a, being given values*/
+body {
+  background-color: black;
+  background-image: url("assets/hardwood.jpg");
+  font-family: "open sans", sans-serif;
+}
+h1 {
+  margin-left: 3%;
+  font-family: "Nunito", sans-serif;
+}
+h2 {
+  font-family: "Nunito", sans-serif;
+}
+a {
+  color: black;
+}
+/*Main Section being given a grey background color and being structured*/
+.main-section {
+  background-color: #D8D8D8;
+  max-width: 1080px;
+  margin: auto;
+  border-radius: 13px 13px 13px;
+  padding: 0.1%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+}
+/*Sub section being given a white background color and being structured*/
+.sub-section {
+  background-color: white;
+  max-width: 1058px;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 13px 13px 13px;
+  padding: 1px 23px 10px 23px;
+  margin-top: -1.5%;
+  overflow: auto;
+}
+/*Navagation being structured and given an underline on hover property*/
+.site-nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+.site-nav a {
+  text-decoration: none;
+  background-color: #F0F0F0 ;
+  padding: 1px 23px 1px 23px;
+}
+.site-nav li {
+  display: inline-block;
+  padding: 0px 0px 0px 17px;
+}
+/*The two main images on the home pagea and the about page being structured with less mixins*/
+.saint {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+}
+.dark {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+}
+.john {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+}
+.rob {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+}
+/*All paragraphs being given a max-width of 50% so it doesn't wrap around the images*/
+p {
+  max-width: 50%;
+}
+/*Introduction on the about page given a max-width of 100% so it takes up the enitre width of the sub-section*/
+.intro {
+  max-width: 100%;
+}
+/*Footer being structured*/
+label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.map {
+  max-width: 34%;
+  border-style: solid;
+  border-width: 5px;
+  float: right;
+  margin: 0 0 0 0;
+  border-style: none;
+  margin-top: 2%;
+}
+.form-section {
+  display: block;
+  width: 43%;
+}
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+input,
+textarea {
+  width: 91%;
+  height: 5%;
+  background: #efefef;
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #3a3a3a;
+}
+textarea {
+  height: 24%;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #97d6eb;
+}
+#submit {
+  max-width: 20%;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 2px;
+}
+#submit:hover {
+  opacity: .9;
+}
+.footer-section {
+  background-color: #D8D8D8;
+  max-width: 1080px;
+  margin: auto;
+  border-radius: 13px 13px 13px;
+  padding: 0.1%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+}
+footer {
+  padding-bottom: 65px;
+}
+footer a {
+  text-decoration: none;
+}
+footer li {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+}
+#rights {
+  float: right;
+  max-width: 54%;
+  padding-right: 2%;
+  margin-top: 6%;
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .site-nav {
+    margin-left: -7%;
+  }
+  .saint,
+  .dark,
+  .john,
+  .rob,
+  .map {
+    float: none;
+  }
+  p {
+    max-width: none;
+  }
+  .saint,
+  .dark,
+  .john,
+  .rob {
+    max-width: 60%;
+  }
+  footer {
+    margin-left: -8%;
+  }
+  #rights {
+    max-width: 86%;
+  }
+  .form-section {
+    width: 100%;
+  }
+}
